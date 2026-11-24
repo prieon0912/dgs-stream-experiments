@@ -14,6 +14,10 @@ runtime. Mode A with these hooks is numerically the upstream algorithm (only log
         --selection_log R/selection.jsonl --selection_state R/selection_state.pt \
         --read_config --config_path R/cfg_run.json -o R/out -m R/init -v $SCENE --image images_2 ...
 
+Speed options (default off = upstream computation):
+  --fused_ssim on   train_frames.ssim -> fused-ssim CUDA kernel (rahul-goel/fused-ssim, runpod/06_install_fused_ssim.sh);
+                    same 11x11 Gaussian window (sigma 1.5), zero padding, C1/C2 and mean; check: tools/ssim_check.py
+
 Per streamed frame one JSON line is appended to --selection_log:
   frame, k, mode, n_base, n_inside, n_selected, full_update, fallback, select_sec, bookkeeping_sec,
   io_sec, motion quantiles of the gaussians actually updated, mask stats (C)
@@ -63,6 +67,9 @@ def own_args(argv):
     ap.add_argument("--e_q", type=float, default=0.01, help="box = [q, 1-q] percentile of candidate centers")
     ap.add_argument("--e_margin", type=float, default=0.1, help="widen the box by margin*extent per side")
     ap.add_argument("--e_min_points", type=int, default=1000, help="fewer candidates -> keep the previous box")
+    # speed (default off = upstream computation)
+    ap.add_argument("--fused_ssim", choices=("off", "on"), default="off",
+                    help="replace train_frames.ssim by the fused-ssim CUDA kernel")
     # diagnostics (not part of the formal timing)
     ap.add_argument("--profile_frames", default="", help="comma list of streamed frames to run under torch.profiler")
     ap.add_argument("--profile_out", default=None)
@@ -113,6 +120,8 @@ class Selector:
         self.frame = frame_name
         self.k = int(re.match(r"frame(\d+)", frame_name).group(1))
         self.rec = dict(frame=frame_name, k=self.k, mode=self.cfg.update_mode)
+        if self.cfg.fused_ssim == "on":
+            self.rec["fused_ssim"] = True
         self.raster = dict(calls=0, pairs=0)
 
     def end_frame(self, frame_sec):
@@ -327,6 +336,31 @@ def _install_raster_counter():
     dgr._C = Proxy()
 
 
+FUSED_SSIM_HELP = ("--fused_ssim on needs the fused_ssim package in this env "
+                   "(bash $EXP/runpod/06_install_fused_ssim.sh; check with tools/ssim_check.py)")
+
+
+def make_fused_ssim(fused_ssim):
+    """Drop-in for utils.loss_utils.ssim(img1, img2) as train_frames calls it: (C,H,W) or (B,C,H,W) images,
+    gradient w.r.t. img1 (the render). fused-ssim hard-codes window 11 / sigma 1.5 and averages the map."""
+    def ssim(img1, img2, window_size=11, size_average=True):
+        if window_size != 11 or not size_average:
+            raise ValueError("fused ssim supports only window_size=11, size_average=True (the 3DGStream call)")
+        if img1.dim() == 3:
+            img1, img2 = img1.unsqueeze(0), img2.unsqueeze(0)
+        return fused_ssim(img1, img2, padding="same", train=True)
+    ssim.fused = True
+    return ssim
+
+
+def install_fused_ssim(tf):
+    try:
+        from fused_ssim import fused_ssim
+    except ImportError as e:
+        raise SystemExit(f"{FUSED_SSIM_HELP}: {e}")
+    tf.ssim = make_fused_ssim(fused_ssim)        # train_frames did `from utils.loss_utils import ssim`
+
+
 def install_hooks(tf):
     from scene import Scene, GaussianModel
     from ntc import NeuralTransformationCache
@@ -434,6 +468,8 @@ def main():
         _install_raster_counter()
     except Exception as e:                       # logging only; never block a run
         print(f"[selective-update] raster counter not installed: {e}")
+    if cfg.fused_ssim == "on":
+        install_fused_ssim(tf)
     print(f"[selective-update] mode={cfg.update_mode} " + json.dumps(vars(cfg), default=str))
     tf.train_frames(lp, op, pp, args)
 
