@@ -1,0 +1,7 @@
+run,mode,pod,profiled_frame,render_backward_ms,render_forward_ms,raster_preprocess_sort_ms,raster_total_ms,ntc_tcnn_ms,memcpy_ms,torch_other_ms,listed_kernel_total_ms,raster_share,ntc_share
+final_s0_pilot_A_opacity1m,A,BE,25,8870,1372,587,10829,1367,525,2373,15094,0.717,0.091
+final_s0_pilot_A_opacity1m,A,BE,26,8833,1363,612,10808,1331,471,2422,15033,0.719,0.089
+final_s0_pilot_B_opacity1m,B,BE,25,8923,1380,587,10890,400,493,2349,14131,0.771,0.028
+final_s0_pilot_B_opacity1m,B,BE,26,8906,1371,613,10890,403,473,2392,14158,0.769,0.028
+final_s0_pilot_C_opacity1m,C,AC,25,10272,1400,777,12449,360,367,2601,15777,0.789,0.023
+final_s0_pilot_C_opacity1m,C,AC,26,10211,1396,777,12384,367,378,2655,15785,0.785,0.023

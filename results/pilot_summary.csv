@@ -1,0 +1,4 @@
+run,mode,pod,init,frames,cam00_psnr_mean,train_s_per_frame,stage1_s,stage2_s,selected_frac_all_frames,selected_frac_non_full_frames,tile_pairs_mean,note
+final_s0_pilot_A_opacity1m,A,BE,opacity1m,30,34.256,24.79,17.49,7.30,1.000,,8280244,B_TAU_XYZ=0.00880432 chosen from this run (target active 0.35; nearest candidates gave 0.494 / 0.212)
+final_s0_pilot_B_opacity1m,B,BE,opacity1m,30,34.250,23.01,15.61,7.40,0.581,0.338,8286093,frames 1-10 and 30 are full updates
+final_s0_pilot_C_opacity1m,C,AC,opacity1m,30,34.231,23.44,15.73,7.71,0.203,0.203,8311985,run on the other pod (same GPU type)
