@@ -15,3 +15,4 @@ zipsplat05,A,final_s0_p2_zipsplat05_A,30,34.2253,0.0000,22.334,1.000,1.000,,
 zipsplat05,B,final_s0_p2_zipsplat05_B,30,34.2036,-0.0217,22.328,1.000,0.763,True,
 zipsplat05,C,final_s0_p2_zipsplat05_C,30,34.3177,0.0924,22.205,1.006,0.171,True,
 zipsplat05,EB,final_s0_p2_zipsplat05_EB,30,34.2845,0.0592,22.130,1.009,0.353,True,yes
+redundancy600k,AR+fused,final_s0_p2_redundancy600k_ARF,30,34.3280,0.0221,10.262,1.936,1.000,True,
