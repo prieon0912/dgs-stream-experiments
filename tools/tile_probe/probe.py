@@ -41,7 +41,9 @@ class _CProxy:
             _LAST["num_rendered"] = int(r[0])
         except Exception:
             _LAST["num_rendered"] = -1
-        rad = r[2] if len(r) > 2 and torch.is_tensor(r[2]) and r[2].dim() == 1 else None
+        # graphdeco: (num_rendered, color, radii, ...); 3DGStream fork: (num_rendered, color, depth, radii, ...)
+        # -> the first 1-D tensor after the image (depth is (H,W) and is skipped)
+        rad = next((x for x in r[2:4] if torch.is_tensor(x) and x.dim() == 1), None)
         _LAST["radii"] = rad
         return r
 
