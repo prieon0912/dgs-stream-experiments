@@ -1,0 +1,4 @@
+mode,render_backward_s,render_forward_s,preprocess_sort_s,ntc_tcnn_s,note
+A,8.85,1.37,0.6,1.35,"GPU kernel time per frame, frames 25-26, torch.profiler, opacity1m"
+B,8.9,1.38,0.6,0.40,
+C,10.2,1.4,,0.36,"measured on the other pod"

@@ -19,7 +19,7 @@ def read_rows(run_dir):
     p = os.path.join(run_dir, "per_frame.csv")
     if not os.path.isfile(p):
         return None
-    rows = [r for r in csv.DictReader(open(p)) if int(float(r["frame"])) >= 1]
+    rows = [r for r in csv.DictReader(open(p, encoding="utf-8-sig")) if int(float(r["frame"])) >= 1]
     return rows
 
 

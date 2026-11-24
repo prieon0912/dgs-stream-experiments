@@ -1,0 +1,17 @@
+init,mode,run,frames_compared,cam00_psnr_db,dpsnr_vs_A_db,train_sec_per_frame,speedup_vs_A,selected_frac_mean,pass_0_1dB,M_star_by_rule
+opacity1m,A,final_s0_pilot_A_opacity1m,30,34.2558,0.0000,24.780,1.000,1.000,,
+opacity1m,B,final_s0_pilot_B_opacity1m,30,34.2504,-0.0054,23.003,1.077,0.581,True,
+opacity1m,C,final_s0_p2_opacity1m_C,30,34.2382,-0.0176,23.327,1.062,0.203,True,
+opacity1m,EB,final_s0_pilot_EB30_opacity1m,30,34.2419,-0.0139,22.822,1.086,0.334,True,yes
+redundancy600k,A,final_s0_p2_redundancy600k_A,30,34.3059,0.0000,19.865,1.000,1.000,,
+redundancy600k,B,final_s0_p2_redundancy600k_B,30,34.3431,0.0372,18.826,1.055,0.595,True,yes
+redundancy600k,C,final_s0_p2_redundancy600k_C,30,34.3489,0.0430,19.422,1.023,0.185,True,
+redundancy600k,EB,final_s0_p2_redundancy600k_EB,30,34.3526,0.0467,19.048,1.043,0.318,True,
+reproj600k,A,final_s0_p2_reproj600k_A,30,33.9384,0.0000,21.938,1.000,1.000,,
+reproj600k,B,final_s0_p2_reproj600k_B,30,33.9867,0.0483,21.776,1.007,0.610,True,
+reproj600k,C,final_s0_p2_reproj600k_C,30,34.0088,0.0703,21.537,1.019,0.195,True,
+reproj600k,EB,final_s0_p2_reproj600k_EB,30,34.0686,0.1301,21.479,1.021,0.305,True,yes
+zipsplat05,A,final_s0_p2_zipsplat05_A,30,34.2253,0.0000,22.334,1.000,1.000,,
+zipsplat05,B,final_s0_p2_zipsplat05_B,30,34.2036,-0.0217,22.328,1.000,0.763,True,
+zipsplat05,C,final_s0_p2_zipsplat05_C,30,34.3177,0.0924,22.205,1.006,0.171,True,
+zipsplat05,EB,final_s0_p2_zipsplat05_EB,30,34.2845,0.0592,22.130,1.009,0.353,True,yes
