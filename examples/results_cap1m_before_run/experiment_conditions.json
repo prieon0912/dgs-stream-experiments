@@ -1,0 +1,758 @@
+[
+  {
+    "run": "camera15_cap1m_s0_baseline_own",
+    "label": "3DGS 15k",
+    "kind": "3dgs",
+    "group": "baseline",
+    "method": "3dgs",
+    "n_views": 20,
+    "camera_names": [
+      "cam01",
+      "cam02",
+      "cam03",
+      "cam04",
+      "cam05",
+      "cam06",
+      "cam07",
+      "cam08",
+      "cam09",
+      "cam10",
+      "cam11",
+      "cam12",
+      "cam13",
+      "cam14",
+      "cam15",
+      "cam16",
+      "cam17",
+      "cam18",
+      "cam19",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 0,
+    "max_gaussians": null,
+    "final_ply": "/workspace/runs/inits/camera15_cap1m_s0_baseline_own.ply",
+    "pre_ply": null,
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_baseline_own/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_baseline_own/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_baseline_own/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_da3_raw",
+    "label": "DA3 all views",
+    "kind": "da3",
+    "group": "baseline",
+    "method": "all_views",
+    "n_views": 20,
+    "camera_names": [
+      "cam01",
+      "cam02",
+      "cam03",
+      "cam04",
+      "cam05",
+      "cam06",
+      "cam07",
+      "cam08",
+      "cam09",
+      "cam10",
+      "cam11",
+      "cam12",
+      "cam13",
+      "cam14",
+      "cam15",
+      "cam16",
+      "cam17",
+      "cam18",
+      "cam19",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 0,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_shared_all_views/limited.ply",
+    "pre_ply": null,
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_da3_raw/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_da3_raw/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_da3_raw/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_da3_1k",
+    "label": "DA3+1k all views",
+    "kind": "da3",
+    "group": "baseline",
+    "method": "all_views",
+    "n_views": 20,
+    "camera_names": [
+      "cam01",
+      "cam02",
+      "cam03",
+      "cam04",
+      "cam05",
+      "cam06",
+      "cam07",
+      "cam08",
+      "cam09",
+      "cam10",
+      "cam11",
+      "cam12",
+      "cam13",
+      "cam14",
+      "cam15",
+      "cam16",
+      "cam17",
+      "cam18",
+      "cam19",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_da3_1k/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_shared_all_views/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_da3_1k/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_da3_1k/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_da3_1k/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_random_04_da3_1000",
+    "label": "random_04+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "random",
+    "n_views": 4,
+    "camera_names": [
+      "cam01",
+      "cam04",
+      "cam05",
+      "cam12"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_04_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_04_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_04_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_04_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_04_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_random_08_da3_1000",
+    "label": "random_08+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "random",
+    "n_views": 8,
+    "camera_names": [
+      "cam01",
+      "cam02",
+      "cam04",
+      "cam05",
+      "cam06",
+      "cam12",
+      "cam14",
+      "cam16"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_08_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_08_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_08_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_08_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_08_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_random_12_da3_1000",
+    "label": "random_12+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "random",
+    "n_views": 12,
+    "camera_names": [
+      "cam01",
+      "cam02",
+      "cam04",
+      "cam05",
+      "cam06",
+      "cam07",
+      "cam09",
+      "cam12",
+      "cam14",
+      "cam16",
+      "cam19",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_12_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_12_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_12_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_12_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_12_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_random_18_da3_1000",
+    "label": "random_18+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "random",
+    "n_views": 18,
+    "camera_names": [
+      "cam01",
+      "cam02",
+      "cam04",
+      "cam05",
+      "cam06",
+      "cam07",
+      "cam08",
+      "cam09",
+      "cam10",
+      "cam11",
+      "cam12",
+      "cam13",
+      "cam14",
+      "cam15",
+      "cam16",
+      "cam18",
+      "cam19",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_18_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_18_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_18_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_18_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_random_18_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_position_fps_04_da3_1000",
+    "label": "position_fps_04+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "position_fps",
+    "n_views": 4,
+    "camera_names": [
+      "cam01",
+      "cam06",
+      "cam14",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_04_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_04_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_04_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_04_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_04_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_position_fps_08_da3_1000",
+    "label": "position_fps_08+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "position_fps",
+    "n_views": 8,
+    "camera_names": [
+      "cam01",
+      "cam04",
+      "cam06",
+      "cam09",
+      "cam11",
+      "cam14",
+      "cam18",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_08_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_08_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_08_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_08_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_08_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_position_fps_12_da3_1000",
+    "label": "position_fps_12+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "position_fps",
+    "n_views": 12,
+    "camera_names": [
+      "cam01",
+      "cam04",
+      "cam06",
+      "cam08",
+      "cam09",
+      "cam11",
+      "cam13",
+      "cam14",
+      "cam16",
+      "cam17",
+      "cam18",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_12_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_12_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_12_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_12_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_12_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_position_fps_18_da3_1000",
+    "label": "position_fps_18+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "position_fps",
+    "n_views": 18,
+    "camera_names": [
+      "cam01",
+      "cam03",
+      "cam04",
+      "cam05",
+      "cam06",
+      "cam07",
+      "cam08",
+      "cam09",
+      "cam11",
+      "cam12",
+      "cam13",
+      "cam14",
+      "cam15",
+      "cam16",
+      "cam17",
+      "cam18",
+      "cam19",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_18_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_18_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_18_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_18_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_position_fps_18_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_direction_fps_04_da3_1000",
+    "label": "direction_fps_04+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "direction_fps",
+    "n_views": 4,
+    "camera_names": [
+      "cam01",
+      "cam10",
+      "cam15",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_04_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_04_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_04_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_04_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_04_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_direction_fps_08_da3_1000",
+    "label": "direction_fps_08+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "direction_fps",
+    "n_views": 8,
+    "camera_names": [
+      "cam01",
+      "cam07",
+      "cam10",
+      "cam11",
+      "cam13",
+      "cam15",
+      "cam19",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_08_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_08_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_08_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_08_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_08_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_direction_fps_12_da3_1000",
+    "label": "direction_fps_12+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "direction_fps",
+    "n_views": 12,
+    "camera_names": [
+      "cam01",
+      "cam02",
+      "cam05",
+      "cam06",
+      "cam07",
+      "cam09",
+      "cam10",
+      "cam11",
+      "cam13",
+      "cam15",
+      "cam19",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_12_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_12_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_12_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_12_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_12_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  },
+  {
+    "run": "camera15_cap1m_s0_direction_fps_18_da3_1000",
+    "label": "direction_fps_18+1k",
+    "kind": "da3",
+    "group": "camera_selection",
+    "method": "direction_fps",
+    "n_views": 18,
+    "camera_names": [
+      "cam01",
+      "cam02",
+      "cam03",
+      "cam04",
+      "cam05",
+      "cam06",
+      "cam07",
+      "cam08",
+      "cam09",
+      "cam10",
+      "cam11",
+      "cam13",
+      "cam15",
+      "cam16",
+      "cam17",
+      "cam18",
+      "cam19",
+      "cam20"
+    ],
+    "seed": 0,
+    "refine_iters": 1000,
+    "max_gaussians": 1000000,
+    "final_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_18_da3_1000/refined.ply",
+    "pre_ply": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_18_da3_1000/limited.ply",
+    "initialization_record": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_18_da3_1000/initialization.json",
+    "environment_gs": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_18_da3_1000/environment_gs.json",
+    "environment_da3": "/workspace/runs/camera_capped/camera15_cap1m_s0_direction_fps_18_da3_1000/environment_da3.json",
+    "actual_model": null,
+    "actual_metadata": {},
+    "actual_environment": {},
+    "expected_aabb": {
+      "schema_version": 1,
+      "coordinate_system": "colmap_world",
+      "method": "original_fixed",
+      "min": [
+        -20.0,
+        -15.0,
+        5.0
+      ],
+      "max": [
+        15.0,
+        10.0,
+        23.0
+      ],
+      "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+    },
+    "actual_aabb": null
+  }
+]

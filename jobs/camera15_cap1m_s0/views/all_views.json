@@ -1,0 +1,32 @@
+{
+  "condition_id": "all_views",
+  "method": "all_views",
+  "n_views": 20,
+  "camera_names": [
+    "cam01",
+    "cam02",
+    "cam03",
+    "cam04",
+    "cam05",
+    "cam06",
+    "cam07",
+    "cam08",
+    "cam09",
+    "cam10",
+    "cam11",
+    "cam12",
+    "cam13",
+    "cam14",
+    "cam15",
+    "cam16",
+    "cam17",
+    "cam18",
+    "cam19",
+    "cam20"
+  ],
+  "seed": 0,
+  "anchor": "cam01",
+  "excluded_cameras": [
+    "cam00"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿condition_id,method,n_views,seed,anchor,camera_names,same_view_set_as
+random_04,random,4,0,cam01,cam01 cam04 cam05 cam12,
+random_08,random,8,0,cam01,cam01 cam02 cam04 cam05 cam06 cam12 cam14 cam16,
+random_12,random,12,0,cam01,cam01 cam02 cam04 cam05 cam06 cam07 cam09 cam12 cam14 cam16 cam19 cam20,
+random_18,random,18,0,cam01,cam01 cam02 cam04 cam05 cam06 cam07 cam08 cam09 cam10 cam11 cam12 cam13 cam14 cam15 cam16 cam18 cam19 cam20,
+position_fps_04,position_fps,4,0,cam01,cam01 cam06 cam14 cam20,
+position_fps_08,position_fps,8,0,cam01,cam01 cam04 cam06 cam09 cam11 cam14 cam18 cam20,
+position_fps_12,position_fps,12,0,cam01,cam01 cam04 cam06 cam08 cam09 cam11 cam13 cam14 cam16 cam17 cam18 cam20,
+position_fps_18,position_fps,18,0,cam01,cam01 cam03 cam04 cam05 cam06 cam07 cam08 cam09 cam11 cam12 cam13 cam14 cam15 cam16 cam17 cam18 cam19 cam20,
+direction_fps_04,direction_fps,4,0,cam01,cam01 cam10 cam15 cam20,
+direction_fps_08,direction_fps,8,0,cam01,cam01 cam07 cam10 cam11 cam13 cam15 cam19 cam20,
+direction_fps_12,direction_fps,12,0,cam01,cam01 cam02 cam05 cam06 cam07 cam09 cam10 cam11 cam13 cam15 cam19 cam20,
+direction_fps_18,direction_fps,18,0,cam01,cam01 cam02 cam03 cam04 cam05 cam06 cam07 cam08 cam09 cam10 cam11 cam13 cam15 cam16 cam17 cam18 cam19 cam20,

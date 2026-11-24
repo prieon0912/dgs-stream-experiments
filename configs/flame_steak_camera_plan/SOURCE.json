@@ -1,0 +1,6 @@
+{
+  "source_url": "https://raw.githubusercontent.com/SJoJoK/3DGStream/main/test/flame_steak_suite/frame000000/sparse/0/images.bin",
+  "repository": "https://github.com/SJoJoK/3DGStream",
+  "sha256": "c5973f03b59cc0b3bd83dc7e654fa8c272b6120bbe7145a3cdab1d2aba8884b2",
+  "note": "Official Flame Steak COLMAP camera metadata, not synthetic. Derived camera JSON and 12 selections are bundled."
+}

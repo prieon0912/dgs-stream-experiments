@@ -1,0 +1,6 @@
+label,path,n_gaussians,views,num_rendered_mean,num_rendered_train_mean,visible_mean,pairs_per_visible,mean_radius,fwd_ms_mean,fwdbwd_ms_mean,fwdbwd_ms_train_mean,status
+plys/3dgs_15k.ply,/b/plys/3dgs_15k.ply,322015,21,3230091,3244263,-1,,-1.0,3.73,17.441,17.389,ok
+plys/da3_all_1k.ply,/b/plys/da3_all_1k.ply,1000000,21,8264652,8302120,-1,,-1.0,8.908,48.137,48.276,ok
+plys/da3_all_raw.ply,/b/plys/da3_all_raw.ply,1000000,21,7804729,7844048,-1,,-1.0,8.796,51.653,51.876,ok
+plys/direction_fps_04_1k.ply,/b/plys/direction_fps_04_1k.ply,652101,21,9866592,9866363,-1,,-1.0,10.284,47.2,47.192,ok
+plys/position_fps_08_1k.ply,/b/plys/position_fps_08_1k.ply,1000000,21,12866413,12879921,-1,,-1.0,13.408,59.786,59.814,ok

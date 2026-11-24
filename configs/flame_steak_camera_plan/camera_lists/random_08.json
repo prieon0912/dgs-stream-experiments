@@ -1,0 +1,47 @@
+{
+  "condition_id": "random_08",
+  "method": "random",
+  "n_views": 8,
+  "seed": 0,
+  "anchor": "cam01",
+  "camera_names": [
+    "cam01",
+    "cam02",
+    "cam04",
+    "cam05",
+    "cam06",
+    "cam12",
+    "cam14",
+    "cam16"
+  ],
+  "selection_order": [
+    "cam01",
+    "cam04",
+    "cam12",
+    "cam05",
+    "cam16",
+    "cam02",
+    "cam14",
+    "cam06"
+  ],
+  "excluded_cameras": [
+    "cam00"
+  ],
+  "view_set_sha256": "513ffd827dd046d33bbf60909055d9ba50454e65837dadaabbcd6973f294d934",
+  "same_view_set_as": null,
+  "geometry": {
+    "min_pair_center_distance": 0.9920409479796602,
+    "min_pair_forward_angle_deg": 3.142293481572779,
+    "max_pair_forward_angle_deg": 42.5786710219649,
+    "center_min": [
+      -1.0345873712801692,
+      -1.34883407691753,
+      -0.4948192962171236
+    ],
+    "center_max": [
+      4.879964222028744,
+      1.543255839284604,
+      1.546389888028912
+    ]
+  }
+}

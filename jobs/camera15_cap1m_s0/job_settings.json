@@ -1,0 +1,694 @@
+{
+  "selection_plan": {
+    "schema_version": 1,
+    "coordinate_system": "colmap_world",
+    "counts": [
+      4,
+      8,
+      12,
+      18
+    ],
+    "seed": 0,
+    "anchor": "cam01",
+    "excluded_cameras": [
+      "cam00"
+    ],
+    "eligible_cameras": [
+      "cam01",
+      "cam02",
+      "cam03",
+      "cam04",
+      "cam05",
+      "cam06",
+      "cam07",
+      "cam08",
+      "cam09",
+      "cam10",
+      "cam11",
+      "cam12",
+      "cam13",
+      "cam14",
+      "cam15",
+      "cam16",
+      "cam17",
+      "cam18",
+      "cam19",
+      "cam20"
+    ],
+    "conditions": [
+      {
+        "condition_id": "random_04",
+        "method": "random",
+        "n_views": 4,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam04",
+          "cam05",
+          "cam12"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam04",
+          "cam12",
+          "cam05"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "47e696e985bbc10ab0151d38dd6583778e8aef5cbdd8628898a3a58c1114ffbc",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 1.1032267284035033,
+          "min_pair_forward_angle_deg": 3.142293481572779,
+          "max_pair_forward_angle_deg": 29.6271249743684,
+          "center_min": [
+            1.1316618053976808,
+            -1.2899992749518068,
+            -0.24117593484032246
+          ],
+          "center_max": [
+            4.879964222028744,
+            1.543255839284604,
+            1.546389888028912
+          ]
+        }
+      },
+      {
+        "condition_id": "random_08",
+        "method": "random",
+        "n_views": 8,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam02",
+          "cam04",
+          "cam05",
+          "cam06",
+          "cam12",
+          "cam14",
+          "cam16"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam04",
+          "cam12",
+          "cam05",
+          "cam16",
+          "cam02",
+          "cam14",
+          "cam06"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "513ffd827dd046d33bbf60909055d9ba50454e65837dadaabbcd6973f294d934",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 0.9920409479796602,
+          "min_pair_forward_angle_deg": 3.142293481572779,
+          "max_pair_forward_angle_deg": 42.5786710219649,
+          "center_min": [
+            -1.0345873712801692,
+            -1.34883407691753,
+            -0.4948192962171236
+          ],
+          "center_max": [
+            4.879964222028744,
+            1.543255839284604,
+            1.546389888028912
+          ]
+        }
+      },
+      {
+        "condition_id": "random_12",
+        "method": "random",
+        "n_views": 12,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam02",
+          "cam04",
+          "cam05",
+          "cam06",
+          "cam07",
+          "cam09",
+          "cam12",
+          "cam14",
+          "cam16",
+          "cam19",
+          "cam20"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam04",
+          "cam12",
+          "cam05",
+          "cam16",
+          "cam02",
+          "cam14",
+          "cam06",
+          "cam20",
+          "cam09",
+          "cam07",
+          "cam19"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "a688fa9727637a8e99481fac815cd9136d05a7c9e2f06fd217c96aec2e6f94f2",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 0.9920409479796602,
+          "min_pair_forward_angle_deg": 3.142293481572779,
+          "max_pair_forward_angle_deg": 64.37231305126565,
+          "center_min": [
+            -5.7712339081432775,
+            -1.3514453924905354,
+            -0.4948192962171236
+          ],
+          "center_max": [
+            4.879964222028744,
+            1.543255839284604,
+            1.546389888028912
+          ]
+        }
+      },
+      {
+        "condition_id": "random_18",
+        "method": "random",
+        "n_views": 18,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam02",
+          "cam04",
+          "cam05",
+          "cam06",
+          "cam07",
+          "cam08",
+          "cam09",
+          "cam10",
+          "cam11",
+          "cam12",
+          "cam13",
+          "cam14",
+          "cam15",
+          "cam16",
+          "cam18",
+          "cam19",
+          "cam20"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam04",
+          "cam12",
+          "cam05",
+          "cam16",
+          "cam02",
+          "cam14",
+          "cam06",
+          "cam20",
+          "cam09",
+          "cam07",
+          "cam19",
+          "cam18",
+          "cam10",
+          "cam13",
+          "cam08",
+          "cam15",
+          "cam11"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "fb1ab15d1c99685875ce733e375e7fe03f7477a1e8664210c9f5716ce440e369",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 0.9835143458126616,
+          "min_pair_forward_angle_deg": 3.142293481572779,
+          "max_pair_forward_angle_deg": 71.82749193417442,
+          "center_min": [
+            -5.7712339081432775,
+            -1.3855114744272683,
+            -0.6483234561921224
+          ],
+          "center_max": [
+            5.6301400560586465,
+            1.5438901957885782,
+            1.546389888028912
+          ]
+        }
+      },
+      {
+        "condition_id": "position_fps_04",
+        "method": "position_fps",
+        "n_views": 4,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam06",
+          "cam14",
+          "cam20"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam20",
+          "cam06",
+          "cam14"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "27448a7d60c4c82dc28cc5d626d46e30d03fc8f847e52a8b585f19092cd2bcbf",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 3.8522875818592115,
+          "min_pair_forward_angle_deg": 19.052514388557167,
+          "max_pair_forward_angle_deg": 59.086563252405774,
+          "center_min": [
+            -5.7712339081432775,
+            -1.34883407691753,
+            -0.3645501230587111
+          ],
+          "center_max": [
+            4.879964222028744,
+            1.4739539449989043,
+            1.546389888028912
+          ]
+        }
+      },
+      {
+        "condition_id": "position_fps_08",
+        "method": "position_fps",
+        "n_views": 8,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam04",
+          "cam06",
+          "cam09",
+          "cam11",
+          "cam14",
+          "cam18",
+          "cam20"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam20",
+          "cam06",
+          "cam14",
+          "cam09",
+          "cam18",
+          "cam04",
+          "cam11"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "ce47d771b02f559aea1df153421fee68109d119e8e1a2ba54c79f4f54a5835ba",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 2.815961938411284,
+          "min_pair_forward_angle_deg": 3.3932367773879695,
+          "max_pair_forward_angle_deg": 64.37231305126565,
+          "center_min": [
+            -5.7712339081432775,
+            -1.34883407691753,
+            -0.6483234561921224
+          ],
+          "center_max": [
+            5.6301400560586465,
+            1.5438901957885782,
+            1.546389888028912
+          ]
+        }
+      },
+      {
+        "condition_id": "position_fps_12",
+        "method": "position_fps",
+        "n_views": 12,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam04",
+          "cam06",
+          "cam08",
+          "cam09",
+          "cam11",
+          "cam13",
+          "cam14",
+          "cam16",
+          "cam17",
+          "cam18",
+          "cam20"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam20",
+          "cam06",
+          "cam14",
+          "cam09",
+          "cam18",
+          "cam04",
+          "cam11",
+          "cam16",
+          "cam08",
+          "cam13",
+          "cam17"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "5678ec06c2dcddc9dbdd389bc7330a1503b25b2998010847eda6c10508c47b43",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 1.124170688327474,
+          "min_pair_forward_angle_deg": 3.3932367773879695,
+          "max_pair_forward_angle_deg": 64.37231305126565,
+          "center_min": [
+            -5.7712339081432775,
+            -1.3855114744272683,
+            -0.6483234561921224
+          ],
+          "center_max": [
+            5.6301400560586465,
+            1.5438901957885782,
+            1.546389888028912
+          ]
+        }
+      },
+      {
+        "condition_id": "position_fps_18",
+        "method": "position_fps",
+        "n_views": 18,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam03",
+          "cam04",
+          "cam05",
+          "cam06",
+          "cam07",
+          "cam08",
+          "cam09",
+          "cam11",
+          "cam12",
+          "cam13",
+          "cam14",
+          "cam15",
+          "cam16",
+          "cam17",
+          "cam18",
+          "cam19",
+          "cam20"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam20",
+          "cam06",
+          "cam14",
+          "cam09",
+          "cam18",
+          "cam04",
+          "cam11",
+          "cam16",
+          "cam08",
+          "cam13",
+          "cam17",
+          "cam05",
+          "cam15",
+          "cam07",
+          "cam03",
+          "cam19",
+          "cam12"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "57b57854bfd5d4045cf1234cc652f87604bf83d9ad02e5040752a5f6a9c21a38",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 0.9984376801365242,
+          "min_pair_forward_angle_deg": 3.142293481572779,
+          "max_pair_forward_angle_deg": 64.37231305126565,
+          "center_min": [
+            -5.7712339081432775,
+            -1.3855114744272683,
+            -0.6483234561921224
+          ],
+          "center_max": [
+            5.6301400560586465,
+            1.5438901957885782,
+            1.546389888028912
+          ]
+        }
+      },
+      {
+        "condition_id": "direction_fps_04",
+        "method": "direction_fps",
+        "n_views": 4,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam10",
+          "cam15",
+          "cam20"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam10",
+          "cam15",
+          "cam20"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "f953003c9f1408e51b4cffc3e4dc13bdb5a92a82ca7ff60b941f29a14ecf5ff9",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 2.863540479644138,
+          "min_pair_forward_angle_deg": 20.663005330664326,
+          "max_pair_forward_angle_deg": 71.82749193417442,
+          "center_min": [
+            -5.7712339081432775,
+            -1.2949745241998967,
+            -0.42367707967099605
+          ],
+          "center_max": [
+            4.879964222028744,
+            1.468620547419529,
+            1.546389888028912
+          ]
+        }
+      },
+      {
+        "condition_id": "direction_fps_08",
+        "method": "direction_fps",
+        "n_views": 8,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam07",
+          "cam10",
+          "cam11",
+          "cam13",
+          "cam15",
+          "cam19",
+          "cam20"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam10",
+          "cam15",
+          "cam20",
+          "cam07",
+          "cam13",
+          "cam19",
+          "cam11"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "c8f1e50404a1ac6e533a54d2173e30193f919d818a0914b8f324accf577c1c2e",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 1.0141492433158126,
+          "min_pair_forward_angle_deg": 7.858858971719901,
+          "max_pair_forward_angle_deg": 71.82749193417442,
+          "center_min": [
+            -5.7712339081432775,
+            -1.3514453924905354,
+            -0.42367707967099605
+          ],
+          "center_max": [
+            5.6301400560586465,
+            1.5438901957885782,
+            1.546389888028912
+          ]
+        }
+      },
+      {
+        "condition_id": "direction_fps_12",
+        "method": "direction_fps",
+        "n_views": 12,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam02",
+          "cam05",
+          "cam06",
+          "cam07",
+          "cam09",
+          "cam10",
+          "cam11",
+          "cam13",
+          "cam15",
+          "cam19",
+          "cam20"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam10",
+          "cam15",
+          "cam20",
+          "cam07",
+          "cam13",
+          "cam19",
+          "cam11",
+          "cam09",
+          "cam06",
+          "cam05",
+          "cam02"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "93fae301515bd709910a6e3598bbfa686dc4900f8a271e83bb0aa6d371e2f8eb",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 0.9835143458126616,
+          "min_pair_forward_angle_deg": 6.8768188853839165,
+          "max_pair_forward_angle_deg": 71.82749193417442,
+          "center_min": [
+            -5.7712339081432775,
+            -1.3514453924905354,
+            -0.42367707967099605
+          ],
+          "center_max": [
+            5.6301400560586465,
+            1.5438901957885782,
+            1.546389888028912
+          ]
+        }
+      },
+      {
+        "condition_id": "direction_fps_18",
+        "method": "direction_fps",
+        "n_views": 18,
+        "seed": 0,
+        "anchor": "cam01",
+        "camera_names": [
+          "cam01",
+          "cam02",
+          "cam03",
+          "cam04",
+          "cam05",
+          "cam06",
+          "cam07",
+          "cam08",
+          "cam09",
+          "cam10",
+          "cam11",
+          "cam13",
+          "cam15",
+          "cam16",
+          "cam17",
+          "cam18",
+          "cam19",
+          "cam20"
+        ],
+        "selection_order": [
+          "cam01",
+          "cam10",
+          "cam15",
+          "cam20",
+          "cam07",
+          "cam13",
+          "cam19",
+          "cam11",
+          "cam09",
+          "cam06",
+          "cam05",
+          "cam02",
+          "cam08",
+          "cam17",
+          "cam18",
+          "cam16",
+          "cam04",
+          "cam03"
+        ],
+        "excluded_cameras": [
+          "cam00"
+        ],
+        "view_set_sha256": "beb94afa36c66fabdf1e6e21ac31af57af645b71eef9168f1fa056e9e9531bf8",
+        "same_view_set_as": null,
+        "geometry": {
+          "min_pair_center_distance": 0.9835143458126616,
+          "min_pair_forward_angle_deg": 4.050989658283765,
+          "max_pair_forward_angle_deg": 71.82749193417442,
+          "center_min": [
+            -5.7712339081432775,
+            -1.3855114744272683,
+            -0.6483234561921224
+          ],
+          "center_max": [
+            5.6301400560586465,
+            1.5438901957885782,
+            1.546389888028912
+          ]
+        }
+      }
+    ],
+    "notes": [
+      "All methods include the same anchor as DA3's first/reference view.",
+      "Random means seeded sampling without replacement of non-anchor cameras.",
+      "Subsets are nested within a method; camera geometry alone does not measure visibility or image quality.",
+      "Equal view sets across methods are reported, not silently treated as distinct evidence."
+    ]
+  },
+  "aabb": {
+    "schema_version": 1,
+    "coordinate_system": "colmap_world",
+    "method": "original_fixed",
+    "min": [
+      -20.0,
+      -15.0,
+      5.0
+    ],
+    "max": [
+      15.0,
+      10.0,
+      23.0
+    ],
+    "aabb_id": "8da2ccea69ca9b2d62f7317cb657482114ed09b3211c27184ccb10bcaefe180b"
+  },
+  "tag": "camera15_cap1m_s0",
+  "server_root": "/workspace/runs/camera_capped",
+  "frame_dir": "/workspace/data/flame_steak/frame000000",
+  "refine_iters": 1000,
+  "max_gaussians": 1000000,
+  "expected_frames": 300,
+  "include_baselines": true
+}

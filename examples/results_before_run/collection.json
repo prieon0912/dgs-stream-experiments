@@ -1,0 +1,7 @@
+{
+  "expected_conditions": 15,
+  "completed_conditions": 0,
+  "comparable_conditions": 0,
+  "measurements_present": false,
+  "note": "Blank fields are unmeasured/unavailable, not zero. Occupancy is a center-overlap proxy. measured_pipeline_s excludes calibration, weight loading, evaluation and diagnostics."
+}
